@@ -1,0 +1,584 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 1050px;
+  margin: auto;
+}
+
+header .container div .nav a:hover, header .container div nav a:hover, main .text button:hover {
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+header {
+  background-color: #1F2235;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+header .container div i {
+  color: #F54753;
+  display: none;
+  float: right;
+}
+
+header .container div .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #1F2235;
+  border-radius: 5px;
+  width: 150px;
+  height: 220px;
+  padding-bottom: 10px;
+  position: absolute;
+  right: 10px;
+  top: 80px;
+}
+
+header .container div .visible {
+  visibility: hidden;
+}
+
+header .container div .nav a {
+  text-decoration: none;
+  padding: 10px;
+  border-bottom: 1px solid #F54753;
+  color: white;
+}
+
+header .container div .nav a:hover {
+  color: #F54753;
+}
+
+header .container div {
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container div h3 {
+  color: white;
+}
+
+header .container div h3 span {
+  color: #F54753;
+}
+
+header .container div nav {
+  word-spacing: 15px;
+}
+
+header .container div nav a {
+  text-decoration: none;
+  color: white;
+}
+
+header .container div nav a:hover {
+  color: #F54753;
+  padding-bottom: 22px;
+  border-bottom: 3px solid #F54753;
+}
+
+main {
+  background-color: #23263A;
+}
+
+main .holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+main .text {
+  -webkit-transition: all 3s;
+  transition: all 3s;
+  opacity: 0.2;
+  margin-top: -600px;
+}
+
+main .text h1, p {
+  color: white;
+  padding-bottom: 20px;
+}
+
+main .text button {
+  width: 150px;
+  height: 50px;
+  color: white;
+  border: 5px solid #F54753;
+  background-color: #23263A;
+  border-radius: 25px;
+  font-weight: 700;
+}
+
+main .text button:hover {
+  background-color: #F54753;
+}
+
+main img {
+  width: 60%;
+  opacity: 0.0;
+  margin-top: -150px;
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+
+.services {
+  padding: 50px 0px 50px 0px;
+  background-color: #1F2235;
+}
+
+.services .title {
+  margin: 0px auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+
+.services .title h5 {
+  color: #F54753;
+  padding-bottom: 20px;
+}
+
+.services .title h3 {
+  color: white;
+  padding-bottom: 20px;
+}
+
+.services .title hr {
+  width: 80%;
+  height: 3px;
+  margin: 0 auto;
+  background-color: #F54753;
+  border: none;
+}
+
+.services .grid {
+  margin-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(280px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.services .grid div {
+  height: 250px;
+  background-color: #23263A;
+  text-align: center;
+}
+
+.services .grid div i {
+  font-size: 68px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: #F54753;
+}
+
+.services .grid div h3 {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.skills {
+  padding: 50px 0px 50px 0px;
+  background-color: #23263A;
+}
+
+.skills .title {
+  margin: 0px auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+
+.skills .title h5 {
+  color: #F54753;
+  padding-bottom: 20px;
+}
+
+.skills .title h3 {
+  color: white;
+  padding-bottom: 20px;
+}
+
+.skills .title hr {
+  width: 80%;
+  height: 3px;
+  margin: 0 auto;
+  background-color: #F54753;
+  border: none;
+}
+
+.skills .holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+}
+
+.skills div img {
+  width: 65%;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.skills .holder .skills-list {
+  width: 50%;
+  padding: 10px;
+}
+
+.skills .holder .skills-list div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.skills div .lan {
+  color: white;
+  position: relative;
+  top: 10px;
+}
+
+.skills div .per {
+  border: 1px solid #F54753;
+  color: #F54753;
+  padding: 5px;
+  font-size: 12px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.skills div hr {
+  width: 0%;
+  height: 3px;
+  -webkit-transition: all 3s;
+  transition: all 3s;
+  background-color: #F54753;
+  border: none;
+}
+
+.resume {
+  padding: 50px 0px 50px 0px;
+  background-color: #1F2235;
+}
+
+.resume .title {
+  margin: 0px auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+
+.resume .title h5 {
+  color: #F54753;
+  padding-bottom: 20px;
+}
+
+.resume .title h3 {
+  color: white;
+  padding-bottom: 20px;
+}
+
+.resume .title hr {
+  width: 80%;
+  height: 3px;
+  margin: 0 auto;
+  background-color: #F54753;
+  border: none;
+}
+
+.resume .holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+}
+
+.resume .holder .pic {
+  width: 50%;
+  border-right: 3px solid #F54753;
+}
+
+.resume .holder .pic img {
+  width: 70%;
+  border-radius: 50%;
+}
+
+.resume .holder .info {
+  padding-left: 25px;
+  color: white;
+}
+
+.resume .holder .info h1 {
+  color: #F54753;
+  margin-bottom: 10px;
+}
+
+.resume .holder .info h2 {
+  color: white;
+  margin-bottom: 25px;
+}
+
+.resume .holder .info h3 {
+  color: #F54753;
+  margin: 25px 0px 25px 0px;
+}
+
+.resume .holder .info span {
+  color: #F54753;
+  display: block;
+  padding: 0px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.resume .holder .info ul {
+  padding-left: 25px;
+  padding-top: 10px;
+}
+
+.resume .holder .info .reset {
+  margin-bottom: 0px;
+  display: inline-block;
+}
+
+.contact {
+  padding: 50px 0px 50px 0px;
+  background-color: #23263A;
+}
+
+.contact .title {
+  margin: 0px auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+
+.contact .title h5 {
+  color: #F54753;
+  padding-bottom: 20px;
+}
+
+.contact .title h3 {
+  color: white;
+  padding-bottom: 20px;
+}
+
+.contact .title h4 {
+  margin-bottom: 25px;
+  color: white;
+}
+
+.contact .title hr {
+  width: 80%;
+  height: 3px;
+  margin: 0 auto;
+  background-color: #F54753;
+  border: none;
+}
+
+.contact .holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact .holder div {
+  width: 50%;
+  padding: 50px;
+}
+
+.contact .holder div input, textarea {
+  background-color: #1F2235;
+  border: 1px solid #F54753;
+  height: 40px;
+  margin: 10px 0px 10px 0px;
+  padding-left: 10px;
+  width: 90%;
+}
+
+.contact .holder div textarea {
+  height: 150px;
+  padding-top: 10px;
+}
+
+.contact .holder div button {
+  width: 150px;
+  height: 50px;
+  margin-top: 10px;
+  color: white;
+  background-color: #F54753;
+  border: none;
+  border-radius: 25px;
+}
+
+.contact .holder div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .holder div i {
+  font-size: 250px;
+  color: #F54753;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 992px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 576px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 400px;
+  }
+  header .container div i {
+    display: block;
+  }
+  main .holder {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .text {
+    text-align: center;
+  }
+  main .text p {
+    line-height: 1.5;
+  }
+  main img {
+    width: 70%;
+    display: none;
+  }
+  header nav {
+    display: none;
+  }
+  .skills .holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skills .holder .skills-list {
+    width: 100%;
+  }
+  .resume .holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .resume .holder .pic {
+    width: 80%;
+    border: none;
+    padding: 25px;
+    border-bottom: 3px solid #F54753;
+  }
+  .resume .holder .pic img {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .resume .holder .info {
+    padding-top: 50px;
+  }
+  .contact .holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact .holder div {
+    width: 100%;
+  }
+  .contact .holder div input, textarea {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=Style.css.map */

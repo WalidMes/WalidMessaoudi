@@ -1,0 +1,439 @@
+@import './GlobalRules';
+
+$DarkColor: #1F2235;
+$LightColor: #23263A;
+$RedColor: #F54753;
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 1050px;
+    margin: auto;
+}
+
+%transation {
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+// start header 
+header {
+    background-color: $DarkColor;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+header .container div i {
+    color: $RedColor;
+    display: none;
+    float: right;
+}
+
+header .container div .nav {
+    display: flex;
+    flex-direction: column;
+    background-color: $DarkColor;
+    border-radius: 5px;
+    width: 150px;
+    height: 220px;
+    padding-bottom: 10px;
+    position: absolute;
+    right: 10px;
+    top: 80px;
+}
+
+header .container div .visible {
+    visibility: hidden;
+}
+
+header .container div .nav a {
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 1px solid $RedColor;
+    color: white;
+    &:hover {
+        color: $RedColor;
+        @extend %transation;
+    }
+}
+
+header .container div{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+header .container div h3 {
+    color: white;
+}
+
+header .container div h3 span {
+    color: $RedColor;
+}
+
+header .container div nav {
+    word-spacing: 15px;
+}
+
+header .container div nav a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+        color: $RedColor;
+        padding-bottom: 22px;
+        border-bottom: 3px solid $RedColor;
+        @extend %transation;
+    }
+}
+// End header
+// Start landing
+main {
+    background-color: $LightColor;
+}
+
+main .holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main .text {
+    transition: all 3s;
+    opacity: 0.2;
+    margin-top: -600px;
+}
+
+main .text h1, p{
+    color: white;
+    padding-bottom: 20px;
+}
+
+main .text button {
+    width: 150px;
+    height: 50px;
+    color: white;
+    border: 5px solid $RedColor;
+    background-color: $LightColor;
+    border-radius: 25px;
+    font-weight: 700;
+    &:hover {
+        background-color: $RedColor;
+        @extend %transation;
+    }
+}
+
+main img{
+    width: 60%;
+    opacity: 0.0;
+    margin-top: -150px;
+    transition: all 3s;
+}
+// End landing
+// Start Services
+.services {
+    padding: 50px 0px 50px 0px;
+    background-color: $DarkColor;
+}    
+
+.services .title {
+    margin: 0px auto;
+    width: fit-content;
+    text-align: center;
+}
+
+.services .title h5 {
+    color: $RedColor;
+    padding-bottom: 20px
+}
+
+.services .title h3 {
+    color: white;
+    padding-bottom: 20px
+}
+
+.services .title hr {
+    width: 80%;
+    height: 3px;
+    margin: 0 auto;
+    background-color: $RedColor;
+    border: none;
+}
+
+.services .grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.services .grid  div {
+    height: 250px;
+    background-color: $LightColor;
+    text-align: center;
+}
+
+.services .grid  div i {
+    font-size: 68px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: $RedColor;
+}
+
+.services .grid  div h3 {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+// End Services
+// Start Skills
+.skills {
+    padding: 50px 0px 50px 0px;
+    background-color: $LightColor;
+}
+
+.skills .title {
+    margin: 0px auto;
+    width: fit-content;
+    text-align: center;
+}
+
+.skills .title h5 {
+    color: $RedColor;
+    padding-bottom: 20px
+}
+
+.skills .title h3 {
+    color: white;
+    padding-bottom: 20px
+}
+
+.skills .title hr {
+    width: 80%;
+    height: 3px;
+    margin: 0 auto;
+    background-color: $RedColor;
+    border: none;
+}
+.skills .holder {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.skills div img {
+    width: 65%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.skills .holder .skills-list {
+    width: 50%;
+    padding: 10px;
+}
+
+.skills .holder .skills-list div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills div .lan {
+    color: white;
+    position: relative;
+    top: 10px;
+}
+
+.skills div .per {
+    border: 1px solid $RedColor;
+    color: $RedColor;
+    padding: 5px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.skills div hr {
+    width: 0%;
+    height: 3px;
+    transition: all 3s;
+    background-color: $RedColor;
+    border: none;
+}
+
+// End Skills
+// Start Resume
+.resume {
+    padding: 50px 0px 50px 0px;
+    background-color: $DarkColor;
+}
+
+.resume .title {
+    margin: 0px auto;
+    width: fit-content;
+    text-align: center;
+}
+
+.resume .title h5 {
+    color: $RedColor;
+    padding-bottom: 20px
+}
+
+.resume .title h3 {
+    color: white;
+    padding-bottom: 20px
+}
+
+.resume .title hr {
+    width: 80%;
+    height: 3px;
+    margin: 0 auto;
+    background-color: $RedColor;
+    border: none;
+}
+
+.resume .holder {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.resume .holder .pic {
+    width: 50%;
+    border-right: 3px solid $RedColor;
+}
+
+.resume .holder .pic img {
+    width: 70%;
+    border-radius: 50%;
+}
+
+.resume .holder .info {
+    padding-left: 25px;
+    color: white;
+}
+
+.resume .holder .info h1{
+    color: $RedColor;
+    margin-bottom: 10px;
+}
+
+.resume .holder .info h2 {
+    color: white;
+    margin-bottom: 25px
+}
+
+.resume .holder .info h3 {
+    color: $RedColor;
+    margin: 25px 0px 25px 0px;
+}
+
+.resume .holder .info span {
+    color: $RedColor;
+    display: block;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.resume .holder .info ul {
+    padding-left: 25px;
+    padding-top: 10px
+}
+
+.resume .holder .info .reset {
+    margin-bottom: 0px;
+    display: inline-block;
+}
+// End Resume
+// Start Contact
+.contact {
+    padding: 50px 0px 50px 0px;
+    background-color: $LightColor;
+}
+
+.contact .title {
+    margin: 0px auto;
+    width: fit-content;
+    text-align: center;
+}
+
+.contact .title h5 {
+    color: $RedColor;
+    padding-bottom: 20px
+}
+
+.contact .title h3 {
+    color: white;
+    padding-bottom: 20px
+}
+
+.contact .title h4 {
+    margin-bottom: 25px;
+    color: white;
+}
+
+.contact .title hr {
+    width: 80%;
+    height: 3px;
+    margin: 0 auto;
+    background-color: $RedColor;
+    border: none;
+}
+
+.contact .holder {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .holder div {
+    width: 50%;
+    padding: 50px;
+}
+
+.contact .holder div input , textarea{
+    background-color: $DarkColor;
+    border: 1px solid $RedColor;
+    height: 40px;
+    margin: 10px 0px 10px 0px;
+    padding-left: 10px;
+    width: 90%;
+}
+
+.contact .holder div textarea {
+    height: 150px;
+    padding-top: 10px;
+}
+
+.contact .holder div button {
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+    color: white;
+    background-color: $RedColor;
+    border: none;
+    border-radius: 25px;
+}
+
+.contact .holder div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .holder div i {
+    font-size: 250px;
+    color: $RedColor;
+}
+// End Contact
+
+
+@import './Responsive';
