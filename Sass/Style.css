@@ -489,6 +489,26 @@ main img {
   color: #F54753;
 }
 
+footer {
+  background-color: #1F2235;
+  text-align: center;
+  padding: 25px 0px 25px 0px;
+}
+
+footer .container i {
+  color: #F54753;
+  font-size: 25px;
+  padding-right: 15px;
+}
+
+footer .container p {
+  color: #b3b3b3;
+  padding-top: 10px;
+  font-size: 12px;
+  position: relative;
+  left: -10px;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 992px;
@@ -509,7 +529,7 @@ main img {
 
 @media (max-width: 576px) {
   .container {
-    width: 400px;
+    width: 356px;
   }
   header .container div i {
     display: block;
