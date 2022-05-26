@@ -26,4 +26,10 @@ $(document).ready(function() {
     $('.fa-bars').click(function(){
         $('.nav').toggleClass('visible');
     });
+
+    $('main button').click(function (){
+        window.scrollTo({
+            top: 2150,
+        });
+    });
 });
