@@ -107,10 +107,12 @@ main .holder {
 }
 
 main .text {
-    transition: all 3s;
-    opacity: 0.2;
-    margin-top: -600px;
+    margin-top: 0px;
 }
+
+// main div.text.animate__animated.animate__bounceInDown {
+//     animation-duration: 2s;
+// }
 
 main .text h1, p{
     color: white;

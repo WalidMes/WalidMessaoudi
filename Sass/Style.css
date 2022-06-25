@@ -130,10 +130,7 @@ main .holder {
 }
 
 main .text {
-  -webkit-transition: all 3s;
-  transition: all 3s;
-  opacity: 0.2;
-  margin-top: -600px;
+  margin-top: 0px;
 }
 
 main .text h1, p {
