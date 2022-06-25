@@ -413,7 +413,7 @@ main img{
     padding-top: 10px;
 }
 
-.contact .holder div button {
+.contact .holder div input[type="submit"] {
     width: 150px;
     height: 50px;
     margin-top: 10px;
@@ -435,5 +435,26 @@ main img{
 }
 // End Contact
 
+// Start footer
+footer {
+    background-color: $DarkColor;
+    text-align: center;
+    padding: 25px 0px 25px 0px;
+}
 
+footer .container i {
+    color: $RedColor;
+    font-size: 25px;
+    padding-right: 15px
+}
+
+footer .container p {
+    color: rgb(179, 179, 179);
+    padding-top: 10px; 
+    font-size: 12px;
+    position: relative;
+    left: -10px;
+}
+
+// end Footer
 @import './Responsive';
