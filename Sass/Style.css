@@ -448,6 +448,7 @@ main img {
 .contact .holder div input, textarea {
   background-color: #1F2235;
   border: 1px solid #F54753;
+  color: white;
   height: 40px;
   margin: 10px 0px 10px 0px;
   padding-left: 10px;

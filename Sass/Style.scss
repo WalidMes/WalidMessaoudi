@@ -401,9 +401,10 @@ main img{
     padding: 50px;
 }
 
-.contact .holder div input , textarea{
+.contact .holder div input, textarea{
     background-color: $DarkColor;
     border: 1px solid $RedColor;
+    color: white;
     height: 40px;
     margin: 10px 0px 10px 0px;
     padding-left: 10px;
