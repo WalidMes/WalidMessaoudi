@@ -267,10 +267,53 @@ main img {
 }
 
 // End Skills
+
+// start myWorks
+.myWork {
+    padding: 50px 0px 50px 0px;
+    background-color: $DarkColor;
+}
+
+.myWork .title {
+    margin: 0px auto;
+    width: fit-content;
+    text-align: center;
+}
+
+.myWork .title h5 {
+    color: $RedColor;
+    padding-bottom: 20px
+}
+
+.myWork .title h3 {
+    color: white;
+    padding-bottom: 20px
+}
+
+.myWork .title hr {
+    width: 80%;
+    height: 3px;
+    margin: 0 auto;
+    background-color: $RedColor;
+    border: none;
+}
+
+// End myWorks
+
+
+
+
+
+
+
+
+
+
+
 // Start Resume
 .resume {
     padding: 50px 0px 50px 0px;
-    background-color: $DarkColor;
+    background-color: $LightColor;
 }
 
 .resume .title {
@@ -354,7 +397,7 @@ main img {
 // Start Contact
 .contact {
     padding: 50px 0px 50px 0px;
-    background-color: $LightColor;
+    background-color: $DarkColor;
 }
 
 .contact .title {
@@ -435,7 +478,7 @@ main img {
 
 // Start footer
 footer {
-    background-color: $DarkColor;
+    background-color: $LightColor;
     text-align: center;
     padding: 25px 0px 25px 0px;
 }

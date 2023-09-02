@@ -267,9 +267,39 @@ main img {
   border: none;
 }
 
-.resume {
+.myWork {
   padding: 50px 0px 50px 0px;
   background-color: #1F2235;
+}
+
+.myWork .title {
+  margin: 0px auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+
+.myWork .title h5 {
+  color: #F54753;
+  padding-bottom: 20px;
+}
+
+.myWork .title h3 {
+  color: white;
+  padding-bottom: 20px;
+}
+
+.myWork .title hr {
+  width: 80%;
+  height: 3px;
+  margin: 0 auto;
+  background-color: #F54753;
+  border: none;
+}
+
+.resume {
+  padding: 50px 0px 50px 0px;
+  background-color: #23263A;
 }
 
 .resume .title {
@@ -353,7 +383,7 @@ main img {
 
 .contact {
   padding: 50px 0px 50px 0px;
-  background-color: #23263A;
+  background-color: #1F2235;
 }
 
 .contact .title {
@@ -433,7 +463,7 @@ main img {
 }
 
 footer {
-  background-color: #1F2235;
+  background-color: #23263A;
   text-align: center;
   padding: 25px 0px 25px 0px;
 }
