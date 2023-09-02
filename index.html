@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Swipper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- JQuery -->
     <script src="./Js/jquery-3.6.0.min.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -21,6 +25,7 @@
     <link rel="stylesheet" href="Sass/Style.css">
     <title>Walid Messaoudi</title>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -30,6 +35,7 @@
                     <a href="#home">Home</a>
                     <a href="#ser">Services</a>
                     <a href="#ski">Skills</a>
+                    <a href="#wor">Works</a>
                     <a href="#res">Resume</a>
                     <a href="#con">Contact</a>
                 </nav>
@@ -53,7 +59,8 @@
                         Designing and Programming your Idea from Scratch</p>
                     <button>My Resume</button>
                 </div>
-                    <img src="./Imgs/pngegg.png" class="text animate__animated animate__bounceInDown animate__delay-.7s" alt="" srcset="">
+                <img src="./Imgs/pngegg.png" class="text animate__animated animate__bounceInDown animate__delay-.7s"
+                    alt="" srcset="">
             </div>
         </div>
     </main>
@@ -65,7 +72,7 @@
                 <h3>My Services</h3>
                 <hr>
             </div>
-    
+
             <div class="grid">
                 <div>
                     <i class="fa-solid fa-laptop-code"></i>
@@ -78,21 +85,24 @@
                 <div>
                     <i class="fa-solid fa-gears"></i>
                     <h3>Web Design</h3>
-                </div>                <div>
+                </div>
+                <div>
                     <i class="fa-solid fa-paintbrush"></i>
                     <h3>Design</h3>
-                </div>                <div>
+                </div>
+                <div>
                     <i class="fa-solid fa-camera"></i>
                     <h3>Video Editing</h3>
-                </div>                <div>
+                </div>
+                <div>
                     <i class="fa-solid fa-code"></i>
                     <h3>Development</h3>
                 </div>
             </div>
-            
+
         </div>
     </div>
-    <div class="skills" id="ski">    
+    <div class="skills" id="ski">
         <div class="container">
             <div class="title">
                 <h5>SKILLS</h5>
@@ -106,27 +116,32 @@
                         <span class="lan">HTML</span><span class="per">80%</span>
                     </div>
                     <hr class="hr1">
-                    <div>  
+                    <div>
                         <span class="lan">CSS</span><span class="per">90%</span>
                     </div>
                     <hr class="hr2">
-                    <div>     
+                    <div>
                         <span class="lan">JS</span><span class="per">70%</span>
                     </div>
                     <hr class="hr3">
-                    <div>                      
+                    <div>
                         <span class="lan">JQuery</span><span class="per">75%</span>
                     </div>
                     <hr class="hr4">
-                    <div>              
+                    <div>
                         <span class="lan">SCSS</span><span class="per">85%</span>
+                    </div>
+                    <hr class="hr5">
+                    <div>
+                        <span class="lan">Python</span><span class="per">75%</span>
                     </div>
                     <hr class="hr5">
                 </div>
             </div>
         </div>
     </div>
-    <div class="myWork">
+
+    <div class="myWork" id="wor">
         <div class="container">
             <div class="title">
                 <h5>WORKS</h5>
@@ -134,10 +149,31 @@
                 <hr>
             </div>
 
-            
+            <!-- Slider main container -->
+            <div class="swiper mySwiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="./Imgs/d1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./Imgs/d2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./Imgs/d3.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./Imgs/d4.png" alt=""></div>
 
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
         </div>
     </div>
+
     <div class="resume" id="res">
         <div class="container">
             <div class="title">
@@ -219,7 +255,7 @@
                         <input type="email" placeholder="Email" name="Email" required> <br>
                         <input type="text" placeholder="Subject" name="Subject" required> <br>
                         <textarea placeholder="Message" name="Message" required></textarea>
-                        <input type="submit" value ="Contact Me" class="sub"></input>
+                        <input type="submit" value="Contact Me" class="sub"></input>
                     </form>
                 </div>
             </div>
@@ -227,11 +263,13 @@
     </div>
     <footer>
         <div class="container">
-            <a href="https://wa.me/+212642501121"><i class="fa-brands fa-whatsapp"></i></a> <a href=""><i class="fa-regular fa-envelope-open"></i></a> <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <p>@2022 Walid Messaoudi</p>
+            <a href="https://wa.me/+212642501121"><i class="fa-brands fa-whatsapp"></i></a> <a href=""><i
+                    class="fa-regular fa-envelope-open"></i></a> <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <p>@2023 Walid Messaoudi</p>
         </div>
     </footer>
 
     <script src="./Js/JavaScript.js"></script>
 </body>
+
 </html>
