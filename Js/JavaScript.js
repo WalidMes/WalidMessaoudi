@@ -1,9 +1,4 @@
 $(document).ready(function() {
-    // logo
-    $('main img').animate({
-        opacity: '0.3'
-    });
-
     // Services
     $(document).scroll(function(){
         if(window.scrollY > 500) {

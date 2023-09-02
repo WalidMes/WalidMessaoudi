@@ -110,10 +110,6 @@ main .text {
     margin-top: 0px;
 }
 
-// main div.text.animate__animated.animate__bounceInDown {
-//     animation-duration: 2s;
-// }
-
 main .text h1, p{
     color: white;
     padding-bottom: 20px;
@@ -133,11 +129,10 @@ main .text button {
     }
 }
 
-main img{
+main img {
+    opacity: 0.3;
     width: 60%;
-    opacity: 0.0;
     margin-top: -150px;
-    transition: all 3s;
 }
 // End landing
 // Start Services
