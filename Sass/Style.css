@@ -22,7 +22,7 @@ body {
   margin: auto;
 }
 
-main .text button:hover, header .container div nav a:hover, header .container div .nav a:hover {
+main .text a:hover, header .container div nav a:hover, header .container div .nav a:hover {
   transition: all;
   transition-duration: 0.5s;
 }
@@ -44,10 +44,11 @@ header .container div .nav {
   display: flex;
   flex-direction: column;
   background-color: #1f2235;
+  padding: 10px 0px 10px 0px;
   border-radius: 5px;
   width: 150px;
-  height: 220px;
-  padding-bottom: 10px;
+  height: -moz-fit-content;
+  height: fit-content;
   position: absolute;
   right: 10px;
   top: 80px;
@@ -117,16 +118,19 @@ p {
   padding-bottom: 20px;
 }
 
-main .text button {
-  width: 150px;
-  height: 50px;
+main .text a {
+  display: block;
+  width: 45%;
+  text-align: center;
+  padding: 20px;
   color: white;
-  border: 5px solid #f54753;
+  text-decoration: none;
+  border: 3px solid #f54753;
   background-color: #23263a;
-  border-radius: 25px;
+  border-radius: 50px;
   font-weight: 700;
 }
-main .text button:hover {
+main .text a:hover {
   background-color: #f54753;
 }
 
@@ -534,6 +538,10 @@ footer .container p {
   .container {
     width: 576px;
   }
+  main .text a {
+    width: 55%;
+    padding: 15px;
+  }
   .swiper .swiper-slide img {
     display: block;
     margin: 0 auto;
@@ -558,6 +566,9 @@ footer .container p {
   }
   main .text p {
     line-height: 1.5;
+  }
+  main .text a {
+    margin: 0 auto;
   }
   main img {
     width: 70%;

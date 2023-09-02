@@ -31,12 +31,6 @@ $(document).ready(function () {
         $('.nav').toggleClass('visible');
     });
 
-    $('main button').click(function () {
-        window.scrollTo({
-            top: 2150,
-        });
-    });
-
     // Swipper
     var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,

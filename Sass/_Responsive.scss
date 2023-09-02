@@ -23,6 +23,11 @@
         width: 576px;
     }
 
+    main .text a {
+        width: 55%;
+        padding: 15px;
+    }
+
     .swiper .swiper-slide img {
         display: block;
         margin: 0 auto;
@@ -52,6 +57,10 @@
 
     main .text p {
         line-height: 1.5;
+    }
+
+    main .text a {
+        margin: 0 auto;
     }
 
     main img{
