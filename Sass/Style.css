@@ -224,6 +224,7 @@ main img {
 }
 
 .services .grid div h3 {
+  color: white;
   font-size: 15px;
   padding-top: 15px;
   font-weight: 500;
