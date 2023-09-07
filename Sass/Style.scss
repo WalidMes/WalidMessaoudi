@@ -17,9 +17,10 @@ body {
   margin: auto;
 }
 
-%transation {
+@mixin transition {
   transition: all;
   transition-duration: 0.5s;
+  transition-timing-function: linear;
 }
 
 // start header
@@ -60,7 +61,7 @@ header .container div .nav a {
   color: white;
   &:hover {
     color: $RedColor;
-    @extend %transation;
+    @include transition();
   }
 }
 
@@ -90,7 +91,7 @@ header .container div nav a {
     color: $RedColor;
     padding-bottom: 22px;
     border-bottom: 3px solid $RedColor;
-    @extend %transation;
+    @include transition();
   }
 }
 // End header
@@ -129,7 +130,7 @@ main .text a {
   font-weight: 700;
   &:hover {
     background-color: $RedColor;
-    @extend %transation;
+    @include transition();
   }
 }
 
@@ -177,21 +178,48 @@ main img {
 }
 
 .services .grid div {
-  height: 250px;
   background-color: $LightColor;
   text-align: center;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.services .grid div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: 3px;
+  background-color: #f54753;
+}
+
+.services .grid div::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0px;
+  height: 3px;
+  background-color: #f54753;
+}
+
+.services .grid div:hover::before, .services .grid div:hover::after {
+  width: 100%;
+  @include transition();
 }
 
 .services .grid div i {
   font-size: 68px;
-  margin-top: 50px;
-  margin-bottom: 20px;
   color: $RedColor;
 }
 
 .services .grid div h3 {
-  color: white;
   font-size: 15px;
+  padding-top: 15px;
   font-weight: 500;
 }
 // End Services

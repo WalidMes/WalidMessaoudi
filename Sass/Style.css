@@ -22,11 +22,6 @@ body {
   margin: auto;
 }
 
-main .text a:hover, header .container div nav a:hover, header .container div .nav a:hover {
-  transition: all;
-  transition-duration: 0.5s;
-}
-
 header {
   background-color: #1f2235;
   position: fixed;
@@ -66,6 +61,9 @@ header .container div .nav a {
 }
 header .container div .nav a:hover {
   color: #f54753;
+  transition: all;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
 }
 
 header .container div {
@@ -95,6 +93,9 @@ header .container div nav a:hover {
   color: #f54753;
   padding-bottom: 22px;
   border-bottom: 3px solid #f54753;
+  transition: all;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
 }
 
 main {
@@ -132,6 +133,9 @@ main .text a {
 }
 main .text a:hover {
   background-color: #f54753;
+  transition: all;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
 }
 
 main img {
@@ -178,21 +182,50 @@ main img {
 }
 
 .services .grid div {
-  height: 250px;
   background-color: #23263a;
   text-align: center;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.services .grid div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: 3px;
+  background-color: #f54753;
+}
+
+.services .grid div::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0px;
+  height: 3px;
+  background-color: #f54753;
+}
+
+.services .grid div:hover::before, .services .grid div:hover::after {
+  width: 100%;
+  transition: all;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
 }
 
 .services .grid div i {
   font-size: 68px;
-  margin-top: 50px;
-  margin-bottom: 20px;
   color: #f54753;
 }
 
 .services .grid div h3 {
-  color: white;
   font-size: 15px;
+  padding-top: 15px;
   font-weight: 500;
 }
 
@@ -599,7 +632,7 @@ footer .container p {
     width: 80%;
     border: none;
     padding: 25px;
-    border-bottom: 3px solid #F54753;
+    border-bottom: 3px solid #f54753;
   }
   .resume .holder .pic img {
     position: relative;
@@ -616,7 +649,8 @@ footer .container p {
   .contact .holder div {
     width: 100%;
   }
-  .contact .holder div input, textarea {
+  .contact .holder div input,
+  textarea {
     width: 100%;
   }
 }/*# sourceMappingURL=Style.css.map */
